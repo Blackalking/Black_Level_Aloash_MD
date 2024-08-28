@@ -1777,10 +1777,10 @@ ${tradutor.texto1[5]}`.trim();
   if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id });
 };*/
 global.dfail = (type, m, conn) => {
-  const datas = global;
+  const datas = global
   const idioma = datas.db.data.users[m.sender].language || 'ar';
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
-  const tradutor = _translate.handler.dfail;
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
+  const tradutor = _translate.handler.dfail
 
   const messages = {
     rowner: '╮───────────────╭ـ\n│ *➣ الميزه دي للمطور بس! ┇💎*\n╯───────────────╰ـ',
