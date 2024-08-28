@@ -1754,7 +1754,7 @@ ${tradutor.texto1[5]}`.trim();
   }
 }
 
-global.dfail = (type, m, conn) => {
+/*global.dfail = (type, m, conn) => {
   const datas = global
   const idioma = datas.db.data.users[m.sender].language || 'es';
   const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
@@ -1775,6 +1775,46 @@ global.dfail = (type, m, conn) => {
   const aa = { quoted: m, userJid: conn.user.jid };
   const prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: tradutor.texto11[0], body: tradutor.texto11[1], thumbnail: imagen1, sourceUrl: tradutor.texto11[2] } } } }, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id });
+};*/
+global.dfail = (type, m, conn) => {
+  const datas = global;
+  const idioma = datas.db.data.users[m.sender].language || 'ar';
+  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
+  const tradutor = _translate.handler.dfail;
+
+  const messages = {
+    rowner: '╮───────────────╭ـ\n│ *➣ الميزه دي للمطور بس! ┇💎*\n╯───────────────╰ـ',
+    owner: '╮───────────────╭ـ\n│ *➣ الميزه دي للمطور بس! ┇💎*\n╯───────────────╰ـ',
+    mods: '╮───────────────╭ـ\n│ *➣ الميزه دي لمالك البوت فقط! ┇💎*\n╯───────────────╰ـ',
+    premium: '╮───────────────╭ـ\n│ *➣ الميزه دي للأعضاء المميزين فقط! ┇💎*\n╯───────────────╰ـ',
+    group: '╮───────────────╭ـ\n│ *➣ الميزه دي في الجروبات فقط! ┇💎*\n╯───────────────╰ـ',
+    private: '╮───────────────╭ـ\n│ *➣ الميزه دي في الخاص فقط! ┇💎*\n╯───────────────╰ـ',
+    admin: '╮───────────────╭ـ\n│ *➣ الميزه دي للادمنز - المشرفين فقط! ┇💎*\n╯───────────────╰ـ',
+    botAdmin: '╮───────────────╭ـ\n│ *➣ ارفع البوت ادمن الاول! ┇💎*\n╯───────────────╰ـ',
+    unreg: '╮───────────────╭ـ\n│ *[ لحظة !! انت مش مسجل ]*\n│ *『 سجل الامر عشان تفعله 』*\n│ *➣ #تسجيل الاسم.السن\n│ *➣مثل : #تسجيل سوكونا.18\n╯───────────────╰ـ',
+    restrict: '╮───────────────╭ـ\n│ *➣ تم الغاء الأمر من قبل المطور! ┇💎*\n╯───────────────╰ـ',
+  };
+
+  const msg = messages[type];
+  const img2 = 'https://telegra.ph/file/5f8e14a2a293e208c9307.jpg';
+
+  if (msg) {
+    return conn.sendMessage(m.chat, {
+      text: msg,
+      contextInfo: {
+        externalAdReply: {
+          showAdAttribution: true,
+          title: '[❗] تحذير',
+          body: '[❗] لا تعبث فيما لا يعنيك',
+          thumbnailUrl: img2,
+          mediaUrl: img2,
+          mediaType: 1,
+          sourceUrl: 'https://whatsapp.com/channel/0029VacWb364dTnEKmVWd628',
+          renderLargerThumbnail: true
+        }
+      }
+    }, { quoted: m });
+  }
 };
 
 const file = global.__filename(import.meta.url, true);
