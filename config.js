@@ -23,7 +23,7 @@ global.wm = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
 global.titulowm = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
 global.titulowm2 = `𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇`
 global.igfg = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
-global.wait = '*_[ ⏳ ] Cargando..._*';
+global.wait = '*_[ ⏳ ]  جارى التحميل سريعا..._*';
 
 global.imagen1 = fs.readFileSync('./src/assets/images/menu/languages/es/menu.png');
 global.imagen2 = fs.readFileSync('./src/assets/images/menu/languages/pt/menu.png');
