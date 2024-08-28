@@ -21,11 +21,11 @@ global.suittag = ['967772046716'];
 global.prems = ['967772046716'];
 
 global.packname = 'Sticker';
-global.author = 'The Mystic - Bot';
-global.wm = 'The Mystic - Bot';
-global.titulowm = 'The Mystic - Bot';
-global.titulowm2 = `The Mystic - Bot`
-global.igfg = 'The Mystic - Bot';
+global.author = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
+global.wm = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
+global.titulowm = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
+global.titulowm2 = `𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇`
+global.igfg = '𝐵𝐿𝐴𝐶𝐾 - 𝐵𝛩𝑇';
 global.wait = '*_[ ⏳ ] Cargando..._*';
 
 global.imagen1 = fs.readFileSync('./src/assets/images/menu/languages/es/menu.png');
