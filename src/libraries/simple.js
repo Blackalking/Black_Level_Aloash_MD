@@ -295,7 +295,7 @@ END:VCARD
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363236795889672@newsletter',
-            newsletterName: 'اضغط هنا 『🇵🇸⤥Anime⊰❄️⊱World⤦🇯🇵』', 
+            newsletterName: '𝓫𝓵𝓪𝓬𝓴 𝓫𝓸𝓽💎', 
             serverMessageId: '' }, 
                 ...options
                 }
