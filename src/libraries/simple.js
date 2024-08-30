@@ -454,8 +454,8 @@ async value(jid, text = '', quoted, options) {
 if (Buffer.isBuffer(text)) {
 return conn.sendFile(jid, text, 'file', '', quoted, false, options)
 } else {
-let canalId = ["120363236795889672@newsletter", "120363236795889672@newsletter", "120363236795889672@newsletter", "120363236795889672@newsletter", "120363236795889672@newsletter"]
-let canalNombre = ["『🇵🇸⤥Anime⊰❄️⊱World⤦🇯🇵』قناتشي", "『🇵🇸⤥Anime⊰❄️⊱World⤦🇯🇵』click", "『🇵🇸⤥Anime⊰❄️⊱World⤦🇯🇵』", "تعالي 『🇵🇸⤥Anime⊰❄️⊱World⤦🇯🇵』", "『🇵🇸⤥Anime⊰❄️⊱World⤦🇯🇵』"]
+let canalId = ["120363291329944922@newsletter"]
+let canalNombre = ["𝓫𝓵𝓪𝓬𝓴 𝓫𝓸𝓽💎"]
 
 async function getRandomChannel() {
 let randomIndex = Math.floor(Math.random() * canalId.length)
