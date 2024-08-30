@@ -294,7 +294,7 @@ END:VCARD
           forwardingScore: 1,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363236795889672@newsletter',
+            newsletterJid: '120363291329944922@newsletter',
             newsletterName: '𝓫𝓵𝓪𝓬𝓴 𝓫𝓸𝓽💎', 
             serverMessageId: '' }, 
                 ...options
