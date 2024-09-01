@@ -904,7 +904,7 @@ export async function handler(chatUpdate) {
           wolflastfeed: 0,
           wood: 0,
           wortel: 0,
-          language: 'es',
+          language: 'ar',
           gameglx: {},
         };
       }
@@ -1128,7 +1128,7 @@ export async function handler(chatUpdate) {
         global.db.data.chats[m.chat] = {};
       }
       if (chat) {
-        if (!('language' in chat)) chat.language = 'es';
+        if (!('language' in chat)) chat.language = 'ar';
         if (!('isBanned' in chat)) chat.isBanned = false;
         if (!('welcome' in chat)) chat.welcome = true;
         if (!('detect' in chat)) chat.detect = true;
@@ -1179,7 +1179,7 @@ export async function handler(chatUpdate) {
           simi: false,
           game: true,
           expired: 0,
-          language: 'es',
+          language: 'ar',
         };
       }
       const settings = global.db.data.settings[this.user.jid];
