@@ -71,7 +71,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.joincount)) user.joincount = 2;
         if (!isNumber(user.limit)) user.limit = 20;
         if (!isNumber(user.money)) user.money = 15;
-        if (!('language' in user)) user.language = 'es';
+        if (!('language' in user)) user.language = 'ar';
         if (!('registered' in user)) user.registered = false;
         if (!('mute' in user)) user.mute = false
         if (!user.registered) {
